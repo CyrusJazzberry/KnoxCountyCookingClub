@@ -1,0 +1,189 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** PINE BASED ******************************/
+	
+	recipe Make Pine Nut Butter
+	{
+		RoastedPineNuts=10,
+		[Recipe.GetItemTypes.Oil];3,
+		Salt=2,
+		keep MortarPestle,
+		
+		Result		: PineNutButter=1,
+		Time		: 140.0,
+		Category	: Cooking,
+        AnimNode:Disassemble,
+        Prop2:MortarPestle,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	}
+	
+	recipe Harvest Pine Nuts
+	{
+		Pinecone=4,
+        keep [Recipe.GetItemTypes.Hammer],
+		
+		Result		: PineNuts=1,
+		Time		: 90.0,
+		Category	: Cooking,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Prepare Pine Syrup
+	{
+		Pinecone=6,
+	    [Recipe.GetItemTypes.Sugar];2,
+		EmptyJar=1,
+		JarLid=1,
+		
+		Result		: PineSyrupFerment=1,
+		Time		: 60.0,
+		Category	: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Sound		: PourWaterIntoObject,
+        AnimNode:Disassemble,
+	}
+
+	recipe Harvest Pine Syrup
+	{
+		PineSyrupReady=1,
+		
+		Result		: PineSyrup=1,
+        OnCreate:GetJar,
+		Time		: 90.0,
+		Category	: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		OnCreate:Recipe.OnCreate.GetJarAndLid,
+		Sound		: PourWaterIntoObject,
+        AnimNode:Disassemble,
+	}
+	
+	/****************************** FRUIT JAMS ******************************/
+	
+	recipe Prepare Jam
+	{
+		Grapefruit/Pear/Mango/Peach/Pineapple/Cherry/Grapes/Orange/Apple/Lemon/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/Persimmon=8,
+		[Recipe.GetItemTypes.Sugar];1,
+		Pot=1,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+	   
+		
+		Result		: JamPrepPotUncooked=1,
+		Time		: 80.0,
+	    Sound		: PourWaterIntoObject,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Harvest Jam
+	{
+		JamPrepPotCooked=25,
+		
+		Result		: JamFruit=2,
+		Time		: 120.0,
+	    Sound		: PourWaterIntoObject,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+        AnimNode:Disassemble,
+		Prop2:JamFruit,
+	}
+	
+	recipe Add Ginger to Jam Prep
+	{
+		JamPrepPot=1,
+		GingerRoot=2,
+	   
+		
+		Result		: SpiceJamPrepPotUncooked=1,
+		Time		: 60.0,
+	    Sound		: PourWaterIntoObject,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        AnimNode:Disassemble,
+	}
+
+	recipe Harvest Spiced Jam
+	{
+		SpiceJamPrepPotCooked=25,
+		
+		Result		: SpiceJam=2,
+		Time		: 120.0,
+	    Sound		: PourWaterIntoObject,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+        AnimNode:Disassemble,
+		Prop2:JamFruit,
+	}
+	
+	/****************************** ACORN FLOUR ******************************/
+	recipe Prepare Acorn Flour
+	{
+		Acorn=32,
+		Water=20,
+		EmptyJar=1,
+		JarLid=1,
+        keep [Recipe.GetItemTypes.Hammer],
+	   
+		
+		Result		: AcornFlourLeaching=1,
+		Time		: 240.0,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        AnimNode:Disassemble,
+		Prop1:Hammer,
+		Prop2:Acorn,
+	}
+	
+
+	recipe Sift and Dry Acorn Flour
+	{
+		AcornFlourLeached=1,
+		BakingTray=1,
+		
+		Result		: AcornFlourDrying=1,
+		Time		: 240.0,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Package Acorn Flour
+	{
+		AcornFlourReady=1,
+		
+		Result		: Flour=1,
+		Time		: 120.0,
+		Category	: Cooking,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+        AnimNode:Disassemble,
+		OnCreate:Recipe.OnCreate.GetEmptyBakingTray,
+	}
+	
+	/****************************** FOOD ADDITIVES ******************************/
+	
+	recipe Make Pesto
+	{
+		RoastedPineNuts=4,
+		[Recipe.GetItemTypes.Oil];2,
+		ItalianSeasoning=1,
+		Salt=1,
+		
+		Result		: Pesto=1,
+		Time		: 120.0,
+		Category	: Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking5,
+        AnimNode:Disassemble,
+	}
+	
+	
+}

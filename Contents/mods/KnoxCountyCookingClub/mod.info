@@ -1,0 +1,8 @@
+name=Knox County Cooking Club
+id=KnoxCountyCookingClub
+description=Make a variety of new homemade foods and food additives! Who said the apocalypse had to be bland?
+poster=preview.png
+modVersion=1.4.0
+icon=logo_mini.png
+tags=Build 41;Food;Multiplayer
+visibility=public

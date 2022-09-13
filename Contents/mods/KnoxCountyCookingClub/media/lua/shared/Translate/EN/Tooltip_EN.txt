@@ -1,0 +1,11 @@
+Tooltip_EN = {   
+	Tooltip_item_Mugwort = "Eat to relieve stress.",
+	Tooltip_item_JarWithLid = "You could take the lid off.",
+	Tooltip_item_PineSyrupFerment = "Takes approximately 30 days to macerate at room temperature.",
+	Tooltip_item_PineSyrupReady = "Ready for harvest."
+	Tooltip_item_PineNuts = "These could be roasted.",
+	Tooltip_item_AcornFlourLeaching = "Takes approximately 4 days to leach at room temperature.",
+	Tooltip_item_AcornFlourLeached = "Ready for sifting and drying.",
+	Tooltip_item_AcornFlourDrying = "Takes approximately 2 days to dry at room temperature.",
+	Tooltip_item_AcornFlourReady = "Ready for harvest.",
+}

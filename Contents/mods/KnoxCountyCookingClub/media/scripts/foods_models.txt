@@ -1,0 +1,23 @@
+module KnoxCooking
+{
+	model PineSyrup
+	{
+		mesh = WorldItems/PineSyrup,
+		texture = WorldItems/PineSyrup,
+		scale = 0.4,
+	}
+	
+	model PineNutButter
+	{
+		mesh = WorldItems/PineNutButter,
+		texture = WorldItems/PineNutButter,
+		scale = 0.4,
+	}
+	
+	model PestoJar
+	{
+		mesh = WorldItems/PestoJar,
+		texture = WorldItems/PestoJar,
+		scale = 0.5,
+	}
+}

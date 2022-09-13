@@ -1,0 +1,15 @@
+Recipes_EN = {
+	Recipe_Make_Pine_Nut_Butter = "Make Pine Nut Butter",
+	Recipe_Harvest_Pine_Nuts = "Harvest Pine Nuts",
+	Recipe_Prepare_Pine_Syrup = "Prepare Pine Syrup",
+	Recipe_Harvest_Pine_Syrup = "Harvest Pine Syrup",
+	Recipe_Prepare_Jam = "Prepare Jam",
+	Recipe_Harvest_Jam = "Harvest Jam",
+	Recipe_Add_Ginger_to_Jam_Prep = "Add Ginger to Jam Prep",
+	Recipe_Harvest_Spiced_Jam = "Harvest Spiced Jam",
+	Recipe_Take_Lid_Off_Jar = "Take Lid Off Jar"
+	Recipe_Prepare_Acorn_Flour = "Prepare Acorn Flour",
+	Recipe_Sift_and_Dry_Acorn_Flour = "Sift and Dry Acorn Flour",
+	Recipe_Package_Acorn_Flour = "Package Acorn Flour",
+	Recipe_Make_Pesto = "Make Pesto",
+} 

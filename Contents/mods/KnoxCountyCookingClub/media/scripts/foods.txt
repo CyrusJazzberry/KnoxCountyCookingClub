@@ -1,0 +1,324 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** PINE BASED ******************************/
+
+	item PineNuts
+	{
+		DisplayName = Pine Nuts,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Peanut,
+		EvolvedRecipe = Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4,
+		FoodType = Nut,
+		HungerChange = -8,
+		DaysFresh = 10,
+		DaysTotallyRotten = 90,
+		IsCookable = true,
+		ReplaceOnCooked = KnoxCooking.RoastedPineNuts,
+		MinutesToCook = 8,
+		MinutesToBurn = 20,
+		Calories = 191,
+		Carbohydrates = 3.7,
+		Lipids = 19,
+		Proteins = 3.9,
+		WorldStaticModel = Peanuts,
+	}
+	
+	item RoastedPineNuts
+	{
+		DisplayName = Pine Nuts (Roasted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Peanut,
+		EvolvedRecipe = Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4,
+		FoodType = Nut,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		DaysFresh = 5,
+		DaysTotallyRotten = 90,
+		Calories = 191,
+		Carbohydrates = 3.7,
+		Lipids = 19,
+		Proteins = 3.9,
+		WorldStaticModel = Peanuts,
+	}
+	
+	item PineNutButter
+	{
+		DisplayName = Pine Nut Butter,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = PineNutButter,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Soup:5;Stir fry Griddle Pan:5;Stir fry:5;Sandwich:5;Sandwich Baguette:5;Toast:5;ConeIcecream:5,
+		Spice = true,
+		HungerChange = -24,
+		Calories = 2019,
+		Carbohydrates = 39.3,
+		Lipids = 205.2,
+		Proteins = 41.1,
+		WorldStaticModel = PineNutButter,
+	}
+
+	item PineSyrupFerment
+	{
+		DisplayName = Pine Syrup (Macerating),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PineSyrupJar,
+		CantBeFrozen = TRUE,
+		ReplaceOnRotten = KnoxCooking.PineSyrupReady,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		Tooltip = Tooltip_item_PineSyrupFerment,
+			DaysFresh = 30,
+			DaysTotallyRotten = 30,
+		FoodType = NoExplicit,
+	}
+	
+	item PineSyrupReady
+	{
+		DisplayName = Pine Syrup (Ready),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PineSyrupJar,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		Tooltip = Tooltip_item_PineSyrupReady,
+		FoodType = NoExplicit,
+	}
+
+	item PineSyrup
+	{
+		DisplayName = Pine Syrup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PineSyrup,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pancakes:3;Waffles:3;ConeIcecream:3;Oatmeal:3;Beverage:3;Beverage2:3;Oatmeal:3,
+		Spice = true,
+		HungerChange = -45,
+		UnhappyChange = -20,
+		Calories = 1100,
+		Carbohydrates = 270,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = PineSyrup,
+		FoodType = NoExplicit,
+	}
+	
+	/****************************** FRUIT JAMS ******************************/
+	
+	item JamPrepPotUncooked
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Food,
+		DisplayName = Pot of Jam Prep,
+		Icon = PotFull,
+		FoodType = Fruits,
+		IsCookable = true,
+        MinutesToBurn = 150,
+		MinutesToCook = 120,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+		ReplaceOnCooked = KnoxCooking.JamPrepPotCooked,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+	
+	item JamPrepPotCooked
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Drainable,
+		UseWhileEquipped = false,
+		UseDelta = 0.04,
+		DisplayName	= Pot of Jam (Cooked),
+		ReplaceOnDeplete = Pot,
+		Icon = PotFull,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+	
+	item SpiceJamPrepPotUncooked
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Food,
+		DisplayName = Pot of Spiced Jam Prep,
+		Icon = PotFull,
+		FoodType = Fruits,
+		IsCookable = true,
+        MinutesToBurn = 150,
+		MinutesToCook = 120,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+		ReplaceOnCooked = KnoxCooking.SpiceJamPrepPotCooked,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+	
+	item SpiceJamPrepPotCooked
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Drainable,
+		UseWhileEquipped = false,
+		UseDelta = 0.04,
+		DisplayName	= Pot of Spiced Jam (Cooked),
+		ReplaceOnDeplete = Pot,
+		Icon = PotFull,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+	
+	item SpiceJam
+	{
+		DisplayName = Spiced Jam,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = JamFruit,
+		EvolvedRecipe = Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3,
+		FoodType = NoExplicit,
+		HungerChange = -30,
+		UnhappyChange = -15,
+		Calories = 596,
+		Carbohydrates = 130.44,
+		Lipids = 2.36,
+		Proteins = 5.10,
+		WorldStaticModel = JamFruit_Ground,
+	}
+	
+	/****************************** FRUIT ******************************/
+	
+	item Persimmon
+	{
+		DisplayName = Persimmon,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Persimmon,
+		EvolvedRecipe = Cake:16;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8;PieSweet:16;Oatmeal:4;Salad:8,
+		FoodType = Fruits,
+		DaysFresh = 2,
+		DaysTotallyRotten = 6,
+		HungerChange = -16,
+		ThirstChange = -8,
+		Calories = 32,
+		Carbohydrates = 8,
+		Lipids = 0.1,
+		Proteins = 0.2,
+		CustomEatSound = EatingFruit,
+		StaticModel = RoundFood_Orange,
+		WorldStaticModel = Orange_Ground,
+	}
+	
+	/****************************** ACORN FLOUR ******************************/
+	
+	item AcornFlourLeaching
+	{
+		DisplayName = Acorn Flour (Leaching),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.1,
+		Icon = JarBrown,
+		CantBeFrozen = TRUE,
+        ReplaceOnRotten = KnoxCooking.AcornFlourLeached,
+		WorldStaticModel = JarFoodCarrots_Ground,
+		Tooltip = Tooltip_item_AcornFlourLeaching,
+			DaysFresh = 4,
+			DaysTotallyRotten = 4,
+	}
+	
+	item AcornFlourLeached
+	{
+		DisplayName = Acorn Flour (Leached),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.1,
+		Icon = JarBrown,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = JarFoodCarrots_Ground,
+		Tooltip = Tooltip_item_AcornFlourLeached,
+	}
+
+	item AcornFlourDrying
+	{
+		DisplayName = Acorn Flour (Drying),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.5,
+		Icon = RoastingpanFull,
+		CantBeFrozen = TRUE,
+        ReplaceOnRotten = KnoxCooking.AcornFlourReady,
+		WorldStaticModel = BakingTray,
+		Tooltip = Tooltip_item_AcornFlourDrying,
+			DaysFresh = 2,
+			DaysTotallyRotten = 2,
+	}
+	
+	item AcornFlourReady
+	{
+		DisplayName = Acorn Flour (Ready),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.5,
+		Icon = RoastingpanFull,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = BBakingTray,
+		Tooltip = Tooltip_item_AcornFlourReady,
+	}
+
+	/****************************** FOOD ADDITIVES ******************************/
+	
+	item Pesto
+	{
+		DisplayName = Pesto,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PestoJar,
+		EvolvedRecipe = Soup:6;Bread:2;Roasted Vegetables:6;Sandwich:2;Sandwich Baguette:2;PastaPot:6;PastaPan:6;RicePot:6;RicePan:6;Salad:6;Stir fry:6;Stir fry Griddle Pan:6,
+		FoodType = NoExplicit,
+		HungerChange = -12,
+		UnhappyChange = -10,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		Calories = 1292,
+		Carbohydrates = 18.8,
+		Lipids = 128,
+		Proteins = 27.6,
+		WorldStaticModel = PestoJar,
+	}
+	
+	item ItalianSeasoning
+	{
+		DisplayName = Italian Seasoning,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.2,
+		Icon = ItalianSeasoning,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -8,
+		ThirstChange = 20,
+		UnhappyChange = 10,
+		Calories = 308,
+		Carbohydrates = 69.6,
+		Lipids = 10,
+		Proteins = 12.4,
+		WorldStaticModel = ItalianSeasoning,
+	}
+
+}
