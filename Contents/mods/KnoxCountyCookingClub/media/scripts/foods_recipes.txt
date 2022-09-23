@@ -154,6 +154,7 @@ imports {
 		Time		: 240.0,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
+		OnCreate:Recipe.OnCreate.GetJarAndLid,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
         AnimNode:Disassemble,
 	}
