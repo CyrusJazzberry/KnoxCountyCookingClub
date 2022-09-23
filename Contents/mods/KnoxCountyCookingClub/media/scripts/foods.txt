@@ -3,7 +3,7 @@ module KnoxCooking
 imports {
     Base
 }
-	/****************************** PINE BASED ******************************/
+	/****************************** PINE PRODUCTS ******************************/
 
 	item PineNuts
 	{
@@ -11,7 +11,7 @@ imports {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.2,
-		Icon = Peanut,
+		Icon = NutsPine,
 		EvolvedRecipe = Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4,
 		FoodType = Nut,
 		HungerChange = -8,
@@ -25,7 +25,7 @@ imports {
 		Carbohydrates = 3.7,
 		Lipids = 19,
 		Proteins = 3.9,
-		WorldStaticModel = Peanuts,
+		WorldStaticModel = NutsPine,
 	}
 	
 	item RoastedPineNuts
@@ -34,18 +34,18 @@ imports {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.2,
-		Icon = Peanut,
+		Icon = NutsPineRoasted,
 		EvolvedRecipe = Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4,
 		FoodType = Nut,
 		HungerChange = -10,
-		UnhappyChange = -10,
-		DaysFresh = 5,
+		UnhappyChange = -4,
+		DaysFresh = 8,
 		DaysTotallyRotten = 90,
 		Calories = 191,
 		Carbohydrates = 3.7,
 		Lipids = 19,
 		Proteins = 3.9,
-		WorldStaticModel = Peanuts,
+		WorldStaticModel = NutsPineRoasted,
 	}
 	
 	item PineNutButter
@@ -115,7 +115,7 @@ imports {
 		FoodType = NoExplicit,
 	}
 	
-	/****************************** FRUIT JAMS ******************************/
+	/****************************** FRUIT PROCESSING ******************************/
 	
 	item JamPrepPotUncooked
 	{
@@ -149,54 +149,36 @@ imports {
 		WorldStaticModel = CookingPotSoup_Ground,
 	}
 	
-	item SpiceJamPrepPotUncooked
+	item MarmaladePrepPotUncooked
 	{
 	    DisplayCategory = Cooking,
 		Weight = 4.0,
 		Type = Food,
-		DisplayName = Pot of Spiced Jam Prep,
+		DisplayName = Pot of Marmalade Prep,
 		Icon = PotFull,
 		FoodType = Fruits,
 		IsCookable = true,
-        MinutesToBurn = 150,
-		MinutesToCook = 120,
+        MinutesToBurn = 200,
+		MinutesToCook = 180,
         BadInMicrowave = true,
         CookingSound = BoilingFood,
-		ReplaceOnCooked = KnoxCooking.SpiceJamPrepPotCooked,
+		ReplaceOnCooked = KnoxCooking.MarmaladePrepPotCooked,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 	}
 	
-	item SpiceJamPrepPotCooked
+	item MarmaladePrepPotCooked
 	{
 	    DisplayCategory = Cooking,
 		Weight = 4.0,
 		Type = Drainable,
 		UseWhileEquipped = false,
 		UseDelta = 0.04,
-		DisplayName	= Pot of Spiced Jam (Cooked),
+		DisplayName	= Pot of Marmalade Prep (Cooked),
 		ReplaceOnDeplete = Pot,
 		Icon = PotFull,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
-	}
-	
-	item SpiceJam
-	{
-		DisplayName = Spiced Jam,
-		DisplayCategory = Food,
-		Type = Food,
-		Weight = 0.2,
-		Icon = JamFruit,
-		EvolvedRecipe = Sandwich:3;Sandwich Baguette:3;Pancakes:5;Waffles:5;ConeIcecream:5;Cake:15;Toast:3;Bread:15;Oatmeal:3,
-		FoodType = NoExplicit,
-		HungerChange = -30,
-		UnhappyChange = -15,
-		Calories = 596,
-		Carbohydrates = 130.44,
-		Lipids = 2.36,
-		Proteins = 5.10,
-		WorldStaticModel = JamFruit_Ground,
 	}
 	
 	/****************************** FRUIT ******************************/
@@ -258,10 +240,10 @@ imports {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 1.5,
-		Icon = RoastingpanFull,
+		Icon = AcornFlourTray,
 		CantBeFrozen = TRUE,
         ReplaceOnRotten = KnoxCooking.AcornFlourReady,
-		WorldStaticModel = BakingTray,
+		WorldStaticModel = AcornFlourTray,
 		Tooltip = Tooltip_item_AcornFlourDrying,
 			DaysFresh = 2,
 			DaysTotallyRotten = 2,
@@ -273,9 +255,9 @@ imports {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 1.5,
-		Icon = RoastingpanFull,
+		Icon = AcornFlourTray,
 		CantBeFrozen = TRUE,
-		WorldStaticModel = BBakingTray,
+		WorldStaticModel = AcornFlourTray,
 		Tooltip = Tooltip_item_AcornFlourReady,
 	}
 
@@ -311,7 +293,7 @@ imports {
 		Icon = ItalianSeasoning,
 		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
 		Spice = true,
-		HungerChange = -8,
+		HungerChange = -10,
 		ThirstChange = 20,
 		UnhappyChange = 10,
 		Calories = 308,
@@ -320,5 +302,61 @@ imports {
 		Proteins = 12.4,
 		WorldStaticModel = ItalianSeasoning,
 	}
+
+	/****************************** MEAT ******************************/
+
+    item RoadRefuse1
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-32,
+        Weight	=	0.4,
+        Type	=	Food,
+        DisplayName	=	Road Squirrel,
+        Icon	=	SquirrelDead,
+        IsCookable	=	TRUE,
+        DangerousUncooked	=	TRUE,
+        DaysTotallyRotten	=	12,
+        MinutesToBurn	=	60,
+        MinutesToCook	=	25,
+        DaysFresh	=	8,
+        Carbohydrates = 0,
+        Proteins = 84.8,
+        Lipids = 15,
+        Calories = 480,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        UnhappyChange	=	20,
+        RemoveUnhappinessWhenCooked = true,
+        WorldStaticModel = DeadSquirrel,
+        CustomEatSound = EatingDeadAnimal,
+    }
+	
+    item RoadRefuse2
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-45,
+        Weight	=	1.0,
+        Type	=	Food,
+        DisplayName	=	Road Rabbit,
+        Icon	=	RabbitDead,
+        IsCookable	=	TRUE,
+        DangerousUncooked	=	TRUE,
+        DaysTotallyRotten	=	12,
+        MinutesToBurn	=	60,
+        MinutesToCook	=	25,
+        DaysFresh	=	8,
+        Carbohydrates = 0,
+        Proteins = 330,
+        Lipids = 35,
+        Calories = 1730,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+        UnhappyChange	=	20,
+        RemoveUnhappinessWhenCooked = true,
+        WorldStaticModel = DeadRabbit,
+        CustomEatSound = EatingDeadAnimal,
+    }
 
 }

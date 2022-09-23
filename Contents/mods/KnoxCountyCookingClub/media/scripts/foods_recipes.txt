@@ -1,13 +1,14 @@
 module KnoxCooking
 {
 imports {
-    Base
+    Base,
+	farming
 }
-	/****************************** PINE BASED ******************************/
+	/****************************** PINE PRODUCTS ******************************/
 	
 	recipe Make Pine Nut Butter
 	{
-		RoastedPineNuts=10,
+		RoastedPineNuts=12,
 		[Recipe.GetItemTypes.Oil];3,
 		Salt=2,
 		keep MortarPestle,
@@ -29,6 +30,7 @@ imports {
 		Time		: 90.0,
 		Category	: Cooking,
         AnimNode:Disassemble,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3
 	}
 	
 	recipe Prepare Pine Syrup
@@ -41,7 +43,6 @@ imports {
 		Result		: PineSyrupFerment=1,
 		Time		: 60.0,
 		Category	: Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
 		Sound		: PourWaterIntoObject,
         AnimNode:Disassemble,
 	}
@@ -54,23 +55,24 @@ imports {
         OnCreate:GetJar,
 		Time		: 90.0,
 		Category	: Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
 		OnCreate:Recipe.OnCreate.GetJarAndLid,
 		Sound		: PourWaterIntoObject,
         AnimNode:Disassemble,
 	}
 	
-	/****************************** FRUIT JAMS ******************************/
+	/****************************** FRUIT PROCESSING ******************************/
 	
 	recipe Prepare Jam
 	{
 		Grapefruit/Pear/Mango/Peach/Pineapple/Cherry/Grapes/Orange/Apple/Lemon/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/Persimmon=8,
-		[Recipe.GetItemTypes.Sugar];1,
+		[Recipe.GetItemTypes.Sugar];2,
 		Pot=1,
 		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
 	   
 		
 		Result		: JamPrepPotUncooked=1,
+	    SkillRequired:Cooking=3,
 		Time		: 80.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
@@ -90,36 +92,37 @@ imports {
 		CanBeDoneFromFloor:true,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
         AnimNode:Disassemble,
-		Prop2:JamFruit,
 	}
 	
-	recipe Add Ginger to Jam Prep
+	recipe Prepare Marmalade
 	{
-		JamPrepPot=1,
-		GingerRoot=2,
+		Grapefruit/Pear/Orange/Lemon/Persimmon=8,
+		[Recipe.GetItemTypes.Sugar];2,
+		Pot=1,
+		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
 	   
 		
-		Result		: SpiceJamPrepPotUncooked=1,
-		Time		: 60.0,
+		Result		: MarmaladePrepPotUncooked=1,
+	    SkillRequired:Cooking=3,
+		Time		: 120.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
 		OnGiveXP:Recipe.OnGiveXP.Cooking10,
         AnimNode:Disassemble,
 	}
-
-	recipe Harvest Spiced Jam
+	
+	recipe Harvest Marmalade
 	{
-		SpiceJamPrepPotCooked=25,
+		MarmaladePrepPotCooked=25,
 		
-		Result		: SpiceJam=2,
+		Result		: JamMarmalade=2,
 		Time		: 120.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
         AnimNode:Disassemble,
-		Prop2:JamFruit,
 	}
 	
 	/****************************** ACORN FLOUR ******************************/
@@ -141,9 +144,8 @@ imports {
 		Prop1:Hammer,
 		Prop2:Acorn,
 	}
-	
 
-	recipe Sift and Dry Acorn Flour
+	recipe Sift Acorn Flour into Tray
 	{
 		AcornFlourLeached=1,
 		BakingTray=1,
@@ -156,7 +158,7 @@ imports {
         AnimNode:Disassemble,
 	}
 	
-	recipe Package Acorn Flour
+	recipe Gather Acorn Flour from Tray
 	{
 		AcornFlourReady=1,
 		
@@ -179,11 +181,73 @@ imports {
 		Salt=1,
 		
 		Result		: Pesto=1,
+	    SkillRequired:Cooking=3,
 		Time		: 120.0,
 		Category	: Cooking,
 		OnGiveXP:Recipe.OnGiveXP.Cooking5,
         AnimNode:Disassemble,
 	}
 	
+	recipe Make Ketchup
+	{
+		Tomato=4,
+		Vinegar=1,
+	    [Recipe.GetItemTypes.Sugar];1,
+		Salt=2,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result		: Ketchup=1,
+		SkillRequired:Cooking=3,
+		Time		: 160.0,
+		Category	: Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking5,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Make Marinara Sauce
+	{
+		Tomato=4,
+	   [Recipe.GetItemTypes.Oil];1,
+	    Pepper=1,
+		Salt=2,
+		Basil/Oregano=1,
+		Onion/WildGarlic=1,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result		: Marinara=1,
+	    SkillRequired:Cooking=3,
+		Time		: 180.0,
+		Category	: Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking5,
+        AnimNode:Disassemble,
+	}
+	
+	/****************************** MEAT ******************************/
+	
+	recipe Butcher Road Squirrel
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        RoadRefuse1=1,
+
+        Result:Smallanimalmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+	
+    recipe Butcher Road Rabbit
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        RoadRefuse2=1,
+
+        Result:Rabbitmeat,
+        Sound:PZ_FoodSwoosh,
+        Time:50.0,
+        OnCreate:Recipe.OnCreate.CutAnimal,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
 	
 }
