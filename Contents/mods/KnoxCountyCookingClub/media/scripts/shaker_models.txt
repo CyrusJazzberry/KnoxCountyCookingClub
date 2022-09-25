@@ -7,10 +7,4 @@ module KnoxCooking
 		scale = 0.6,
 	}
 
-	model USASshaker_generic
-	{
-		mesh = WorldItems/USASshaker_generic,
-		texture = WorldItems/USASshaker_generic,
-		scale = 0.6,
-	}
 }
