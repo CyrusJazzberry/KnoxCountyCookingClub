@@ -39,9 +39,29 @@ local CannedMilk = {
 	zones={ Forest = 1.0, DeepForest = 1.0, FarmLand = 3.0, Farm = 3.0, Vegitation = 1.0, TrailerPark = 5.0, TownZone = 5.0, Nav = 1.0 },
 	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn }
 };
+local RoadRefuse1 = {
+	type="KnoxCooking.RoadRefuse1",
+	minCount=1,
+	maxCount=1,
+	xp=10,
+	categories = { "DeadAnimals" },
+	zones={ Forest = 0, DeepForest = 0, FarmLand = 0, Farm = 0, Vegitation = 0, TrailerPark = 0, TownZone = 0, Nav = 1.0 },
+    spawnFuncs = { doDeadTrapAnimalSpawn },
+};
+local RoadRefuse2 = {
+	type="KnoxCooking.RoadRefuse2",
+	minCount=1,
+	maxCount=1,
+	xp=10,
+	categories = { "DeadAnimals" },
+	zones={ Forest = 0, DeepForest = 0, FarmLand = 0, Farm = 0, Vegitation = 0, TrailerPark = 0, TownZone = 0, Nav = 1.0 },
+    spawnFuncs = { doDeadTrapAnimalSpawn },
+};
 
 forageSystem.addItemDef(Mugwort);
 forageSystem.addItemDef(Persimmon);
 forageSystem.addItemDef(CannedMilk);
+forageSystem.addItemDef(RoadRefuse1);
+forageSystem.addItemDef(RoadRefuse2);
 
 end);

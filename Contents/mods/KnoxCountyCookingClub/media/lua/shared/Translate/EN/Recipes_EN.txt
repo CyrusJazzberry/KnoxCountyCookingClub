@@ -5,11 +5,15 @@ Recipes_EN = {
 	Recipe_Harvest_Pine_Syrup = "Harvest Pine Syrup",
 	Recipe_Prepare_Jam = "Prepare Jam",
 	Recipe_Harvest_Jam = "Harvest Jam",
-	Recipe_Add_Ginger_to_Jam_Prep = "Add Ginger to Jam Prep",
-	Recipe_Harvest_Spiced_Jam = "Harvest Spiced Jam",
-	Recipe_Take_Lid_Off_Jar = "Take Lid Off Jar"
+	Recipe_Prepare_Marmalade = "Prepare Marmalade",
+	Recipe_Harvest_Marmalade = "Harvest Marmalade",
 	Recipe_Prepare_Acorn_Flour = "Prepare Acorn Flour",
-	Recipe_Sift_and_Dry_Acorn_Flour = "Sift and Dry Acorn Flour",
-	Recipe_Package_Acorn_Flour = "Package Acorn Flour",
+	Recipe_Sift_Acorn_Flour_into_Tray = "Sift Acorn Flour into Tray",
+	Recipe_Gather_Acorn_Flour_from_Tray = "Gather Acorn Flour from Tray",
 	Recipe_Make_Pesto = "Make Pesto",
-} 
+	Recipe_Blend_Herbs = "Blend Herbs",
+	Recipe_Make_Ketchup = "Make Ketchup",
+	Recipe_Make_Marinara_Sauce = "Make Marinara Sauce",
+	Recipe_Butcher_Road_Squirrel = "Butcher Road Squirrel",
+	Recipe_Butcher_Road_Rabbit = "Butcher Road Rabbit",
+}
