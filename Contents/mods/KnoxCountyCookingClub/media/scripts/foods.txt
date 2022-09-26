@@ -302,6 +302,56 @@ imports {
 		Proteins = 12.4,
 		WorldStaticModel = ItalianSeasoning,
 	}
+	
+	/****************************** SWEETS ******************************/
+	
+	item CaramelPrepPan
+	{
+		DisplayName = Pan of Caramel Prep,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = SaucepanFilled,
+		CookingSound = BoilingFood,
+		IsCookable = true,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		ReplaceOnCooked = KnoxCooking.CaramelPrepPanCooked
+		WorldStaticModel = WaterSaucepanPasta,
+	}
+	
+	item CaramelPrepPanCooked
+	{
+		DisplayName = Pan of Caramel Prep (Cooked),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = SaucepanFilled,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		IsCookable = true,
+		WorldStaticModel = WaterSaucepanPasta,
+	}
+	
+	item Caramel
+	{
+		DisplayName = Caramel,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		Icon = PineNutButter,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = ConeIcecream:4;PieSweet:6;Cake:6;
+		Spice = true,
+		HungerChange = -24,
+		Calories = 1301.6,
+		Carbohydrates = 336.4,
+		Lipids = 0,
+		Proteins = 7.3,
+		WorldStaticModel = PineNutButter,
+	}
+	
+	
 
 	/****************************** MEAT ******************************/
 
