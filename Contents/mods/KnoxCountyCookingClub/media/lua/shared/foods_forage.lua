@@ -13,7 +13,7 @@ local Mugwort = {
 	bonusMonths = { 8, 9, 10 },
 	malusMonths = { 3, 4 },
 	zones={ Forest = 1.0, DeepForest = 1.0, FarmLand = 1.0, Farm = 1.0, Vegitation = 1.0, TrailerPark = 1.0, TownZone= 1.0 , Nav = 0 },
-	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn }
+	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
 };
 
 local Persimmon = {
@@ -27,7 +27,7 @@ local Persimmon = {
 	bonusMonths = { 9, 10 },
 	malusMonths = { 1, 2 },
 	zones={ Forest = 5.0, DeepForest = 5.0, FarmLand = 10.0, Farm = 10.0 },
-	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn }
+	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
 };
 
 local CannedMilk = {
@@ -37,7 +37,7 @@ local CannedMilk = {
 	xp=10,
 	categories = { "JunkFood" },
 	zones={ Forest = 1.0, DeepForest = 1.0, FarmLand = 3.0, Farm = 3.0, Vegitation = 1.0, TrailerPark = 5.0, TownZone = 5.0, Nav = 1.0 },
-	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn }
+	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
 };
 local RoadRefuse1 = {
 	type="KnoxCooking.RoadRefuse1",
