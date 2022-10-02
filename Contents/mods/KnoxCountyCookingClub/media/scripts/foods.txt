@@ -343,6 +343,8 @@ imports {
 		Spice = TRUE,
 		HungerChange = -12,
 		UnhappyChange = -12,
+		DaysFresh = 7,
+		DaysTotallyRotten = 21,
 		Calories = 1301.6,
 		Carbohydrates = 336.4,
 		Lipids = 0,

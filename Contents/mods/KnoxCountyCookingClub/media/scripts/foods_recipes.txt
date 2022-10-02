@@ -65,7 +65,7 @@ imports {
 	
 	recipe Prepare Jam
 	{
-		Grapefruit/Pear/Mango/Peach/Pineapple/Cherry/Grapes/Orange/Apple/Lemon/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/Persimmon=8,
+		Grapefruit/Pear/Mango/Peach/Pineapple/Cherry/Grapes/Orange/Apple/Lemon/Strewberrie/BerryBlack/BerryBlue/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/Persimmon=8,
 		[Recipe.GetItemTypes.Sugar];2,
 		Pot=1,
 		keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
