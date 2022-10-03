@@ -83,10 +83,10 @@ imports {
 	
 	recipe Harvest Jam
 	{
-		JamPrepPotCooked=25,
+		JamPrepPotCooked=10,
 		
-		Result		: JamFruit=2,
-		Time		: 120.0,
+		Result		: JamFruit=1,
+		Time		: 90.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
@@ -114,10 +114,10 @@ imports {
 	
 	recipe Harvest Marmalade
 	{
-		MarmaladePrepPotCooked=25,
+		MarmaladePrepPotCooked=10,
 		
-		Result		: JamMarmalade=2,
-		Time		: 120.0,
+		Result		: JamMarmalade=1,
+		Time		: 90.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
