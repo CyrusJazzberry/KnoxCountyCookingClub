@@ -4,6 +4,10 @@ Recipes_EN = {
 	Recipe_Prepare_Pine_Syrup = "Prepare Pine Syrup",
 	Recipe_Harvest_Pine_Syrup = "Harvest Pine Syrup",
 	
+	Recipe_Prepare_Pine_Wine_Must = "Prepare Pine Wine Must",
+	Recipe_Begin_Pine_Wine_Fermentation = "Begin Pine Wine Fermentation",
+	Recipe_Take_Lid_off_Pine_Wine = "Take Lid off Pine Wine",
+	
 	Recipe_Prepare_Jam = "Prepare Jam",
 	Recipe_Harvest_Jam = "Harvest Jam",
 	

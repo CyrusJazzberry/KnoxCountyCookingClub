@@ -295,4 +295,50 @@ imports {
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
     }
 	
+	/****************************** DRINKS ******************************/
+	
+	recipe Prepare Pine Wine Must
+	{
+		Pinecone=6,
+		destroy WaterPot=1,
+        Yeast=1,
+		[Recipe.GetItemTypes.Sugar];2,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		
+		Result		: PineWineMustUncooked=1,
+		Time		: 140.0,
+		Category	: Cooking,
+	    SkillRequired:Cooking=5,
+        AnimNode:Disassemble,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		CanBeDoneFromFloor:true,
+	}
+	
+	recipe Begin Pine Wine Fermentation
+	{
+		PineWineMustPrep=1,
+		EmptyJar=1,
+        JarLid=1,
+		
+		Result		: PineWineMustFerment=1,
+		Time		: 140.0,
+		Category	: Cooking,
+        AnimNode:Disassemble,
+		OnCreate:Recipe.OnCreate.StartPWFerment,
+	    CanBeDoneFromFloor:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	}
+	
+	recipe Take Lid off Pine Wine
+	{
+		PineWineMustReady=1,
+		
+		Result		: PineWine=1,
+		Time		: 30.0,
+		Category	: Cooking,
+		OnCreate:Recipe.OnCreate.LidOffPW,
+	    CanBeDoneFromFloor:true,
+        AnimNode:Disassemble,
+	}
+	
 }

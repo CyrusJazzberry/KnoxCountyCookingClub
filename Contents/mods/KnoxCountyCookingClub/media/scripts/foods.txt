@@ -432,4 +432,93 @@ imports {
         CustomEatSound = EatingDeadAnimal,
     }
 
+	/****************************** DRINKS ******************************/
+	
+	item PineWineMustUncooked
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Food,
+		DisplayName = Pine Wine Must,
+		Icon = PotFull,
+		FoodType = NoExplicit,
+		IsCookable = true,
+        MinutesToBurn = 90,
+		MinutesToCook = 60,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+		ReplaceOnCooked = KnoxCooking.PineWineMustPrep,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+	
+	item PineWineMustPrep
+	{
+	    DisplayCategory = Cooking,
+		Weight = 4.0,
+		Type = Food,
+		DisplayName = Pine Wine Must (Prepared),
+		Icon = PotFull,
+		FoodType = NoExplicit,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+	}
+
+	item PineWineMustFerment
+	{
+		DisplayName = Pine Wine Must (Fermenting),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2.0,
+		Icon = PineSyrupJar,
+		CantBeFrozen = TRUE,
+		ReplaceOnRotten = KnoxCooking.PineWineMustReady,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		Tooltip = Tooltip_item_PineWineMustFerment,
+			DaysFresh = 7,
+			DaysTotallyRotten = 7,
+		FoodType = NoExplicit,
+	}
+	
+	item PineWineMustReady
+	{
+		DisplayName = Pine Wine (Ready),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2.0,
+		Icon = PineSyrupJar,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		Tooltip = Tooltip_item_PineWineMustReady,
+		FoodType = NoExplicit,
+	}
+	
+	item PineWine
+	{
+		DisplayName = Pine Wine,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2.0,
+		Icon = WineFull,
+		EvolvedRecipe = Beverage:4;Beverage2:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4,
+		FoodType = Wine,
+		Alcoholic = TRUE,
+		CantBeFrozen = TRUE,
+		EatType = Bourbon,
+		ReplaceOnUse = EmptyJar,
+		HungerChange = -20,
+		ThirstChange = -20,
+		UnhappyChange = -20,
+		Calories = 481,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiteWineBottle,
+		WorldStaticModel = WineWhiteGround,
+	}
+
 }

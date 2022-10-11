@@ -6,6 +6,12 @@ ItemName_EN = {
 	ItemName_KnoxCooking.PineSyrupReady = "Pine Syrup (Ready)",
 	ItemName_KnoxCooking.PineSyrup = "Pine Syrup",
 	
+	ItemName_KnoxCooking.PineWineMustUncooked = "Pine Wine Must",
+	ItemName_KnoxCooking.PineWineMustPrep= "Pine Wine Must (Prepared)",
+	ItemName_KnoxCooking.PineWineMustFerment = "Pine Wine Must (Fermenting)",
+	ItemName_KnoxCooking.PineWineMustReady = "Pine Wine (Ready)",
+	ItemName_KnoxCooking.PineWine = "Pine Wine",
+	
 	ItemName_KnoxCooking.JamPrepPotUncooked = "Pot of Jam Prep",
 	ItemName_KnoxCooking.JamPrepPotCooked = "Pot of Jam (Cooked)",
 	ItemName_KnoxCooking.MarmaladePrepPotUncooked = "Pot of Marmalade Prep",
