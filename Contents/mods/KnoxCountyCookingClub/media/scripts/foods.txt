@@ -205,6 +205,30 @@ imports {
 		WorldStaticModel = Orange_Ground,
 	}
 	
+	/****************************** VEGGIES ******************************/
+	
+	item Rhubarb
+	{
+		DisplayName = Rhubarb,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Apple,
+		EvolvedRecipe = Pie:4;FruitSalad:4;Salad:4;Muffin:4;Salad:4;Roasted Vegetables:4,
+		FoodType = Vegetables,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
+		HungerChange = -8,
+		ThirstChange = -4,
+		Calories = 11,
+		Carbohydrates = 6,
+		Lipids = 0.2,
+		Proteins = 1.1,
+		CustomEatSound = EatingFruit,
+		StaticModel = RoundFood_Orange,
+		WorldStaticModel = Orange_Ground,
+	}
+	
 	/****************************** ACORN FLOUR ******************************/
 	
 	item AcornFlourLeaching
@@ -520,5 +544,52 @@ imports {
 		StaticModel = WhiteWineBottle,
 		WorldStaticModel = WineWhiteGround,
 	}
+	
+	item Lemonade
+	{
+		DisplayName = Lemonade,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.0,
+		Icon = Milk,
+		EvolvedRecipe = Beverage:4;Beverage2:4;WineInGlass:4,
+		FoodType = Juice,
+		Packaged = TRUE,
+		HungerChange = -10,
+		ThirstChange = -80,
+		UnhappyChange = -20,
+		Calories = 490,
+		Carbohydrates = 126,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+		StaticModel = MilkCarton,
+		WorldStaticModel = Milk_Ground,
+	}
+	
+	item AppleCider
+	{
+		DisplayName = Apple Cider,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.0,
+		Icon = Milk,
+		EvolvedRecipe = Beverage:4;Beverage2:4;Soup:4;Roasted Vegetables:4;Pancakes:2;WineInGlass:4;Oatmeal:4,
+		FoodType = Juice,
+		Packaged = TRUE,
+		HungerChange = -10,
+		ThirstChange = -80,
+		UnhappyChange = -20,
+		Calories = 769,
+		Carbohydrates = 189,
+		Lipids = 2.2,
+		Proteins = 1.7,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+		StaticModel = MilkCarton,
+		WorldStaticModel = Milk_Ground,
+	}
+
 
 }
