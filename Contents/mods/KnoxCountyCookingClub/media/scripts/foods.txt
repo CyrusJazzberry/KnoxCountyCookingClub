@@ -120,9 +120,9 @@ imports {
 	item JamPrepPotUncooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
+		Weight = 3,
 		Type = Food,
-		DisplayName = Pot of Jam Prep,
+		DisplayName = Pot of Jam,
 		Icon = PotFull,
 		FoodType = Fruits,
 		IsCookable = true,
@@ -131,6 +131,9 @@ imports {
         BadInMicrowave = true,
         CookingSound = BoilingFood,
 		ReplaceOnCooked = KnoxCooking.JamPrepPotCooked,
+		ReplaceOnRotten = KnoxCooking.JamPrepPotSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 		Tags = HasMetal,
@@ -139,24 +142,42 @@ imports {
 	item JamPrepPotCooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
-		Type = Drainable,
+		Weight = 3,
+		Type = Food,
 		UseWhileEquipped = false,
-		UseDelta = 0.05,
 		DisplayName	= Pot of Jam (Cooked),
-		ReplaceOnDeplete = Pot,
+		ReplaceOnUse = Pot,
+		Icon = PotFull,
+		StaticModel = CookingPot,
+		ReplaceOnRotten = KnoxCooking.JamPrepPotSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
+		WorldStaticModel = CookingPotSoup_Ground,
+		Tags = HasMetal,
+	}
+	
+	item JamPrepPotSpoiled
+	{
+	    DisplayCategory = Cooking,
+		Weight = 3,
+		Type = Food,
+		UseWhileEquipped = false,
+		DisplayName	= Pot of Jam (Rotten),
+		ReplaceOnUse = Pot,
 		Icon = PotFull,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
+		FoodType = NoExplicit,
 		Tags = HasMetal,
+		Tooltip = Tooltip_item_FruitProcessingRotten,
 	}
 	
 	item MarmaladePrepPotUncooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
+		Weight = 3,
 		Type = Food,
-		DisplayName = Pot of Marmalade Prep,
+		DisplayName = Pot of Marmalade,
 		Icon = PotFull,
 		FoodType = Fruits,
 		IsCookable = true,
@@ -165,6 +186,9 @@ imports {
         BadInMicrowave = true,
         CookingSound = BoilingFood,
 		ReplaceOnCooked = KnoxCooking.MarmaladePrepPotCooked,
+		ReplaceOnRotten = KnoxCooking.MarmaladePrepPotSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 		Tags = HasMetal,
@@ -173,22 +197,40 @@ imports {
 	item MarmaladePrepPotCooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
-		Type = Drainable,
+		Weight = 3,
+		Type = Food,
 		UseWhileEquipped = false,
-		UseDelta = 0.05,
 		DisplayName	= Pot of Marmalade (Cooked),
-		ReplaceOnDeplete = Pot,
+		ReplaceOnRotten = KnoxCooking.MarmaladePrepPotSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
+		ReplaceOnUse = Pot,
 		Icon = PotFull,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 		Tags = HasMetal,
 	}
 	
+	item MarmaladePrepPotSpoiled
+	{
+	    DisplayCategory = Cooking,
+		Weight = 3,
+		Type = Food,
+		UseWhileEquipped = false,
+		DisplayName	= Pot of Marmalade (Rotten),
+		ReplaceOnUse = Pot,
+		Icon = PotFull,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+		FoodType = NoExplicit,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_FruitProcessingRotten,
+	}
+	
 	item AppleCiderPrepUncooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
+		Weight = 3,
 		Type = Food,
 		UseWhileEquipped = false,
 		DisplayName	= Pot of Apple Cider Prep,
@@ -200,6 +242,9 @@ imports {
         BadInMicrowave = true,
         CookingSound = BoilingFood,
 		ReplaceOnCooked = KnoxCooking.AppleCiderPrepCooked,
+		ReplaceOnRotten = KnoxCooking.AppleCiderPrepSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 		Tags = HasMetal,
@@ -208,16 +253,34 @@ imports {
 	item AppleCiderPrepCooked
 	{
 	    DisplayCategory = Cooking,
-		Weight = 4.0,
-		Type = Drainable,
+		Weight = 3,
+		Type = Food,
 		UseWhileEquipped = false,
-		UseDelta = 0.04,
 		DisplayName	= Pot of Apple Cider (Cooked),
-		ReplaceOnDeplete = Pot,
+		ReplaceOnUse = Pot,
 		Icon = PotFull,
+		ReplaceOnRotten = KnoxCooking.AppleCiderPrepSpoiled,
+			DaysFresh = 1,
+			DaysTotallyRotten = 2,
 		StaticModel = CookingPot,
 		WorldStaticModel = CookingPotSoup_Ground,
 		Tags = HasMetal,
+	}
+	
+	item AppleCiderPrepSpoiled
+	{
+	    DisplayCategory = Cooking,
+		Weight = 3,
+		Type = Food,
+		UseWhileEquipped = false,
+		DisplayName	= Pot of Apple Cider (Rotten),
+		ReplaceOnUse = Pot,
+		Icon = PotFull,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotSoup_Ground,
+		FoodType = NoExplicit,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_FruitProcessingRotten,
 	}
 	
 	/****************************** FRUIT ******************************/

@@ -83,14 +83,15 @@ imports {
 	
 	recipe Harvest Jam
 	{
-		JamPrepPotCooked=10,
+		JamPrepPotCooked,
 		
-		Result		: JamFruit=1,
-		Time		: 90.0,
+		Result		: JamFruit=2,
+		Time		: 160.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		OnCreate:Recipe.OnCreate.GetEmptyCookingPot,
         AnimNode:Disassemble,
 	}
 	
@@ -114,14 +115,15 @@ imports {
 	
 	recipe Harvest Marmalade
 	{
-		MarmaladePrepPotCooked=10,
+		MarmaladePrepPotCooked,
 		
-		Result		: JamMarmalade=1,
-		Time		: 90.0,
+		Result		: JamMarmalade=2,
+		Time		: 160.0,
 	    Sound		: PourWaterIntoObject,
 		Category	: Cooking,
 		CanBeDoneFromFloor:true,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		OnCreate:Recipe.OnCreate.GetEmptyCookingPot,
         AnimNode:Disassemble,
 	}
 	
@@ -381,14 +383,30 @@ imports {
 	
 	recipe Harvest Apple Cider
 	{
-		AppleCiderPrepCooked=25,
+		AppleCiderPrepCooked,
 		
 		
 		Result		: AppleCider=1,
 		Time		: 90.0,
 		Category	: Cooking,
         OnGiveXP:Recipe.OnGiveXP.Cooking5,
+		OnCreate:Recipe.OnCreate.GetEmptyCookingPot,
 	    CanBeDoneFromFloor:true,
+        AnimNode:Disassemble,
+	}
+	
+	/****************************** OTHER ******************************/
+	
+	recipe Empty Pot
+	{
+		destroy AppleCiderPrepUncooked/AppleCiderPrepCooked/AppleCiderPrepSpoiled/JamPrepPotUncooked/JamPrepPotCooked/JamPrepPotSpoiled/MarmaladePrepPotUncooked/MarmaladePrepPotCooked/MarmaladePrepPotSpoiled,
+		
+		
+		Result		: Pot=1,
+		Time		: 40.0,
+		Category	: Cooking,
+	    CanBeDoneFromFloor:true,
+		Sound		: PourWaterIntoObject,
         AnimNode:Disassemble,
 	}
 	

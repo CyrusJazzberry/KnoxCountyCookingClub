@@ -31,6 +31,11 @@ function Recipe.OnCreate.GetEmptyRoastingPan(items, result, player)
     player:getInventory():AddItems("Base.RoastingPan", 1);
 end
 
+-- cooking pot
+function Recipe.OnCreate.GetEmptyCookingPot(items, result, player)
+    player:getInventory():AddItems("Base.Pot", 1);
+end
+
 -- major cooking XP
 function Recipe.OnGiveXP.Cooking10(recipe, ingredients, result, player)
     player:getXp():AddXP(Perks.Cooking, 10);
