@@ -341,4 +341,55 @@ imports {
         AnimNode:Disassemble,
 	}
 	
+	recipe Make Lemonade
+	{
+		Lemon=6,
+		Water=15,
+	    [Recipe.GetItemTypes.Sugar];5,
+	    keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        keep [Recipe.GetItemTypes.Hammer],
+	    keep Bowl,
+		
+		
+		Result		: Lemonade=1,
+		Time		: 240.0,
+		Category	: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	    CanBeDoneFromFloor:true,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Prepare Apple Cider
+	{
+		Apple=6,
+		Water=15,
+	    [Recipe.GetItemTypes.Sugar];5,
+	    keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+	    keep Bowl,
+		Pot=1,
+		
+		
+		Result		: AppleCiderPrepUncooked=1,
+		Time		: 260.0,
+		Category	: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	    CanBeDoneFromFloor:true,
+        AnimNode:Disassemble,
+	}
+	
+	recipe Harvest Apple Cider
+	{
+		AppleCiderPrepCooked=25,
+		
+		
+		Result		: AppleCider=1,
+		Time		: 90.0,
+		Category	: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	    CanBeDoneFromFloor:true,
+        AnimNode:Disassemble,
+	}
+	
 }
