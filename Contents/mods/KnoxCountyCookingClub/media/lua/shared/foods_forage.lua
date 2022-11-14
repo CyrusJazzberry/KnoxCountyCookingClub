@@ -30,6 +30,21 @@ local Persimmon = {
 	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
 };
 
+local Rhubarb = {
+	type="KnoxCooking.Rhubarb",
+	minCount=1,
+	maxCount=2,
+	skill = 3,
+	xp=5,
+	snowChance = -10,
+	categories = { "Vegetables" },
+	months = { 3, 4, 5, 6, 7, 8, 9, 10 },
+	bonusMonths = { 5, 6, 7 },
+	malusMonths = { 8, 9, 10 },
+	zones={ Forest = 10.0, DeepForest = 10.0, Vegitation = 5.0, FarmLand = 10.0, Farm = 10.0 },
+	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
+};
+
 local CannedMilk = {
 	type="Base.CannedMilk",
 	minCount=1,
@@ -39,6 +54,7 @@ local CannedMilk = {
 	zones={ Forest = 1.0, DeepForest = 1.0, FarmLand = 3.0, Farm = 3.0, Vegitation = 1.0, TrailerPark = 5.0, TownZone = 5.0, Nav = 1.0 },
 	spawnFuncs = { doWildFoodSpawn, doRandomAgeSpawn },
 };
+
 local RoadRefuse1 = {
 	type="KnoxCooking.RoadRefuse1",
 	minCount=1,
@@ -48,6 +64,7 @@ local RoadRefuse1 = {
 	zones={ Forest = 0, DeepForest = 0, FarmLand = 0, Farm = 0, Vegitation = 0, TrailerPark = 0, TownZone = 0, Nav = 5.0 },
     spawnFuncs = { doDeadTrapAnimalSpawn },
 };
+
 local RoadRefuse2 = {
 	type="KnoxCooking.RoadRefuse2",
 	minCount=1,
@@ -60,6 +77,7 @@ local RoadRefuse2 = {
 
 forageSystem.addItemDef(Mugwort);
 forageSystem.addItemDef(Persimmon);
+forageSystem.addItemDef(Rhubarb);
 forageSystem.addItemDef(CannedMilk);
 forageSystem.addItemDef(RoadRefuse1);
 forageSystem.addItemDef(RoadRefuse2);
