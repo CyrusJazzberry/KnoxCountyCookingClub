@@ -357,6 +357,7 @@ imports {
 		Result		: Lemonade=1,
 		Time		: 240.0,
 		Category	: Cooking,
+		Sound		: PourWaterIntoObject,
         OnGiveXP:Recipe.OnGiveXP.Cooking5,
 	    CanBeDoneFromFloor:true,
         AnimNode:Disassemble,
@@ -389,6 +390,7 @@ imports {
 		Result		: AppleCider=1,
 		Time		: 90.0,
 		Category	: Cooking,
+		Sound		: PourWaterIntoObject,
         OnGiveXP:Recipe.OnGiveXP.Cooking5,
 		OnCreate:Recipe.OnCreate.GetEmptyCookingPot,
 	    CanBeDoneFromFloor:true,
@@ -407,7 +409,6 @@ imports {
 		Category	: Cooking,
 	    CanBeDoneFromFloor:true,
 		Sound		: PourWaterIntoObject,
-        AnimNode:Disassemble,
 	}
 	
 }

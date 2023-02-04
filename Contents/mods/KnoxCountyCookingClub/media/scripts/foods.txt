@@ -233,7 +233,7 @@ imports {
 		Weight = 3,
 		Type = Food,
 		UseWhileEquipped = false,
-		DisplayName	= Pot of Apple Cider Prep,
+		DisplayName	= Pot of Apple Cider,
 		Icon = PotFull,
 		FoodType = Juice,
 		IsCookable = true,
