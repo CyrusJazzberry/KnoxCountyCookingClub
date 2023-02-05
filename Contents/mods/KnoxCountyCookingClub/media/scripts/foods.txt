@@ -671,7 +671,7 @@ imports {
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCarton,
 		StaticModel = MilkCarton,
-		WorldStaticModel = Milk_Ground,
+		WorldStaticModel = Lemonade,
 	}
 	
 	item AppleCider
@@ -696,7 +696,7 @@ imports {
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCarton,
 		StaticModel = MilkCarton,
-		WorldStaticModel = Milk_Ground,
+		WorldStaticModel = AppleCider,
 	}
 
 

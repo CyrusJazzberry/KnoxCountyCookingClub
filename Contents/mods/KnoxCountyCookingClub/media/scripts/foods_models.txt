@@ -41,4 +41,18 @@ module KnoxCooking
 		texture = WorldItems/NutsPineRoasted,
 		scale = 0.01,
 	}
+	
+	model Lemonade
+	{
+		mesh = WorldItems/CartonGeneric,
+		texture = WorldItems/Lemonade,
+		scale = 0.4,
+	}
+	
+	model AppleCider
+	{
+		mesh = WorldItems/CartonGeneric,
+		texture = WorldItems/AppleCider,
+		scale = 0.4,
+	}
 }
