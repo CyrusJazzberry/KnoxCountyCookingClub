@@ -16,7 +16,18 @@ imports {
 		WorldStaticModel = EmptyJar,
 	}
 	
-	/****************************** FORAGE ******************************/
+	/****************************** PACKAGES ************************************/
+	item CaramelPackage
+	{
+        DisplayCategory = Material,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		DisplayName = Caramel Package,
+		Icon = Crisps,
+		Weight = 0.6,
+		Tooltip = Tooltip_item_CaramelPackage,
+		WorldStaticModel = Chips,
+	}
 	
 
 }

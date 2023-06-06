@@ -1,5 +1,13 @@
 module KnoxCooking
 {
+
+	model ItalianSeasoning
+	{
+		mesh = WorldItems/ItalianSeasoning,
+		texture = WorldItems/ItalianSeasoning,
+		scale = 0.6,
+	}
+
 	model PineSyrup
 	{
 		mesh = WorldItems/PineSyrup,

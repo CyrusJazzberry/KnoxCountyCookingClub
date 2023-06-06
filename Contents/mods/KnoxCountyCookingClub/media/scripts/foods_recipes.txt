@@ -176,6 +176,20 @@ imports {
 	
 	/****************************** FOOD ADDITIVES ******************************/
 	
+	recipe Blend Herbs
+	{
+		Basil=4,
+		Thyme=4, 
+		Oregano=4, 
+		Rosemary=4, 
+		Cilantro=4,
+		keep MortarPestle,
+		
+		Result		: ItalianSeasoning=1,
+		Time		: 90.0,
+		Category	: Cooking,
+	}
+	
 	recipe Make Pesto
 	{
 		RoastedPineNuts=4,

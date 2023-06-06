@@ -4,7 +4,6 @@ imports {
     Base
 }
 	/****************************** FOOD FALLBACK ******************************/
-	
 	recipe Take Lid Off Jar
 	{
 		JarWithLid=1,
@@ -15,6 +14,19 @@ imports {
 		Category	: Cooking,
 		OnCreate:Recipe.OnCreate.GetEmptyJar,
         AnimNode:Disassemble,
+	}
+	
+	/****************************** PACKAGES ************************************/
+	recipe Open Caramel Package
+	{
+		CaramelPackage=1,
+		
+		Result		: Caramel=4,
+        OnCreate:GetJar,
+		Time		: 30.0,
+		Category	: Cooking,
+        AnimNode:RipSheets,
+        Sound:ClothesRipping,
 	}
 
 }
