@@ -436,7 +436,7 @@ imports {
 		Type = Food,
 		Weight = 0.1,
 		Icon = Mugwort,
-		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Beverage:1;Beverage2;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1,
+		EvolvedRecipe = Soup:1;Stew:1;Beverage:1;Beverage2;HotDrink:1;HotDrinkRed:1;HotDrinkWhite:1;HotDrinkSpiffo:1;HotDrinkTea:1,
 		Spice = true,
 		HungerChange = -1,
 		StressChange = -2,
@@ -486,7 +486,7 @@ imports {
 		DisplayCategory = Food,
 		Type = Food,
 		Weight = 0.4,
-		Icon = Honey,
+		Icon = Caramel,
 		FoodType = NoExplicit,
 		EvolvedRecipe = ConeIcecream:2;PieSweet:4;Cake:4,
 		Spice = TRUE,
@@ -498,7 +498,7 @@ imports {
 		Carbohydrates = 168.2,
 		Lipids = 0,
 		Proteins = 3.7,
-		WorldStaticModel = Honey,
+		WorldStaticModel = Caramel,
 	}
 	
 	item CaramelApple
@@ -506,7 +506,8 @@ imports {
 		DisplayName = Caramel Apple,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.1,
+		Weight = 0.2,
+        GoodHot = true,
 		Icon = Apple,
 		FoodType = NoExplicit,
 		DaysFresh = 5,
@@ -691,7 +692,6 @@ imports {
 			DaysTotallyRotten = 10,
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCarton,
-		StaticModel = MilkCarton,
 		WorldStaticModel = Lemonade,
 	}
 	
@@ -716,7 +716,6 @@ imports {
 			DaysTotallyRotten = 7,
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromCarton,
-		StaticModel = MilkCarton,
 		WorldStaticModel = AppleCider,
 	}
 

@@ -63,4 +63,18 @@ module KnoxCooking
 		texture = WorldItems/AppleCider,
 		scale = 0.4,
 	}
+
+	model Caramel
+	{
+		mesh = WorldItems/Caramel,
+		texture = WorldItems/Caramel,
+		scale = 0.4,
+	}
+	
+	model CaramelBag
+	{
+		mesh = WorldItems/BagGeneric,
+		texture = WorldItems/CaramelBag,
+		scale = 0.008,
+	}
 }

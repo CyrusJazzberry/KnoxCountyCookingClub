@@ -17,11 +17,11 @@ imports {
 	}
 	
 	/****************************** PACKAGES ************************************/
-	recipe Open Caramel Package
+	recipe Open Bag of Caramels
 	{
-		CaramelPackage=1,
+		CaramelBag=1,
 		
-		Result		: Caramel=4,
+		Result		: Caramel=6,
         OnCreate:GetJar,
 		Time		: 30.0,
 		Category	: Cooking,

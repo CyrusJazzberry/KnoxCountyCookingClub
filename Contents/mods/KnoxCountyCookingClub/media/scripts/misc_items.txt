@@ -17,16 +17,16 @@ imports {
 	}
 	
 	/****************************** PACKAGES ************************************/
-	item CaramelPackage
+	item CaramelBag
 	{
         DisplayCategory = Material,
         DisplayCategory = Cooking,
 		Type = Normal,
-		DisplayName = Caramel Package,
+		DisplayName = Bag of Caramels,
 		Icon = Crisps,
 		Weight = 0.6,
-		Tooltip = Tooltip_item_CaramelPackage,
-		WorldStaticModel = Chips,
+		Tooltip = Tooltip_item_CaramelBag,
+		WorldStaticModel = CaramelBag,
 	}
 	
 
