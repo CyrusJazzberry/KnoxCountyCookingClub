@@ -520,8 +520,7 @@ imports {
 		Proteins = 4.8,
 		CustomEatSound = EatingFruit,
 		ReplaceOnUse = WoodenStick,
-		StaticModel = RoundFood_Red,
-		WorldStaticModel = Apple_Ground,
+		WorldStaticModel = CaramelApple,
 	}
 
 	/****************************** DRINKS ******************************/

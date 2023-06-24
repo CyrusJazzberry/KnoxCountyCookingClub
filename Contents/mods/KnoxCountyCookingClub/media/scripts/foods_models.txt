@@ -70,6 +70,14 @@ module KnoxCooking
 		texture = WorldItems/Caramel,
 		scale = 0.4,
 	}
+
+
+	model CaramelApple
+	{
+		mesh = WorldItems/CaramelApple,
+		texture = WorldItems/CaramelApple,
+		scale = 0.004,
+	}
 	
 	model CaramelBag
 	{
