@@ -23,7 +23,4 @@ Recipes_EN = {
 	
 	Recipe_Make_Ketchup = "Make Ketchup",
 	Recipe_Make_Marinara_Sauce = "Make Marinara Sauce",
-	
-	Recipe_Butcher_Road_Squirrel = "Butcher Road Squirrel",
-	Recipe_Butcher_Road_Rabbit = "Butcher Road Rabbit",
 }

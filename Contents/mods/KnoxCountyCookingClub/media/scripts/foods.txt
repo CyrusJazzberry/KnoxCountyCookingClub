@@ -523,64 +523,6 @@ imports {
 		StaticModel = RoundFood_Red,
 		WorldStaticModel = Apple_Ground,
 	}
-	
-	
-
-	/****************************** MEAT ******************************/
-
-    item RoadRefuse1
-    {
-        DisplayCategory = Food,
-        HungerChange	=	-32,
-        Weight	=	0.4,
-        Type	=	Food,
-        DisplayName	=	Road Squirrel,
-        Icon	=	SquirrelDead,
-        IsCookable	=	TRUE,
-        DangerousUncooked	=	TRUE,
-        DaysTotallyRotten	=	12,
-        MinutesToBurn	=	60,
-        MinutesToCook	=	25,
-        DaysFresh	=	8,
-        Carbohydrates = 0,
-        Proteins = 84.8,
-        Lipids = 15,
-        Calories = 480,
-        BadInMicrowave = true,
-        GoodHot = true,
-        BadCold = true,
-        UnhappyChange	=	20,
-        RemoveUnhappinessWhenCooked = true,
-        WorldStaticModel = DeadSquirrel,
-        CustomEatSound = EatingDeadAnimal,
-    }
-	
-    item RoadRefuse2
-    {
-        DisplayCategory = Food,
-        HungerChange	=	-45,
-        Weight	=	1.0,
-        Type	=	Food,
-        DisplayName	=	Road Rabbit,
-        Icon	=	RabbitDead,
-        IsCookable	=	TRUE,
-        DangerousUncooked	=	TRUE,
-        DaysTotallyRotten	=	12,
-        MinutesToBurn	=	60,
-        MinutesToCook	=	25,
-        DaysFresh	=	8,
-        Carbohydrates = 0,
-        Proteins = 330,
-        Lipids = 35,
-        Calories = 1730,
-        BadInMicrowave = true,
-        GoodHot = true,
-        BadCold = true,
-        UnhappyChange	=	20,
-        RemoveUnhappinessWhenCooked = true,
-        WorldStaticModel = DeadRabbit,
-        CustomEatSound = EatingDeadAnimal,
-    }
 
 	/****************************** DRINKS ******************************/
 	
@@ -640,7 +582,7 @@ imports {
 		Weight = 2.0,
 		Icon = PineSyrupJar,
 		CantBeFrozen = TRUE,
-		WorldStaticModel = JarFoodEggplants_Ground,
+		WorldStaticModel = PineWine,
 		Tooltip = Tooltip_item_PineWineMustReady,
 		FoodType = NoExplicit,
 	}
@@ -667,8 +609,7 @@ imports {
 		Proteins = 0,
 		CustomContextMenu = Drink,
 		CustomEatSound = DrinkingFromBottleGlass,
-		StaticModel = WhiteWineBottle,
-		WorldStaticModel = WineWhiteGround,
+		WorldStaticModel = PineWineOpen,
 	}
 	
 	item Lemonade

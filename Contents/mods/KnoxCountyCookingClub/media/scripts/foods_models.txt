@@ -24,9 +24,9 @@ module KnoxCooking
 	
 	model PestoJar
 	{
-		mesh = WorldItems/PestoJar,
+		mesh = WorldItems/SmallJarGeneric,
 		texture = WorldItems/PestoJar,
-		scale = 0.5,
+		scale = 0.45,
 	}
 	
 	model AcornFlourTray
@@ -76,5 +76,19 @@ module KnoxCooking
 		mesh = WorldItems/BagGeneric,
 		texture = WorldItems/CaramelBag,
 		scale = 0.008,
+	}
+	
+	model PineWine
+	{
+		mesh = WorldItems/FullJarGeneric,
+		texture = WorldItems/PineWine,
+		scale = 0.6,
+	}
+	
+	model PineWineOpen
+	{
+		mesh = WorldItems/FullJarEmptyGeneric,
+		texture = WorldItems/PineWineOpen,
+		scale = 0.6,
 	}
 }
