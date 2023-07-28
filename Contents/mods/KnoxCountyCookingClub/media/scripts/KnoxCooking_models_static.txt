@@ -1,0 +1,31 @@
+module KnoxCooking
+{
+	/************** This file is for static models only. **************/	
+
+	model CaramelApple
+	{
+		mesh = WorldItems/CaramelApple,
+		scale = 0.004,
+		rotate = 180.0000 0.0000 0.0000,
+		
+		attachment world
+		{
+			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.1000 0.0000,
+		}
+	}
+	
+	model PineWineOpen
+	{
+		mesh = WorldItems/PineWineOpen,
+		rotate = 180.0000 0.0015 0.0015,
+		scale = 0.006,
+
+		attachment world
+		{
+			rotate = 180.0000 0.0000 0.0000,
+			offset = 0.0000 -0.1000 0.0000,
+		}
+	}
+	
+}

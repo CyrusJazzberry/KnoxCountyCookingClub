@@ -1,0 +1,149 @@
+module Base
+{
+	/****** This is usually a big no-no! We're only overwriting these until a more efficient way to add EvolvedRecipe tags to items is found. ******/
+	
+	item Basil
+	{
+		DisplayName = Basil,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbBasil,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 6.5,
+		Carbohydrates = 0.8,
+		Lipids = 0.2,
+		Proteins = 0.9,
+		WorldStaticModel = Basil_Ground,
+	}
+
+	item Thyme
+	{
+		DisplayName = Thyme,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbThyme,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 27.8,
+		Carbohydrates = 7,
+		Lipids = 0.5,
+		Proteins = 1.6,
+		WorldStaticModel = HerbThyme_Ground,
+	}
+
+	item Chives
+	{
+		DisplayName = Chives,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbChives,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 8.5,
+		Carbohydrates = 1.3,
+		Lipids = 0.2,
+		Proteins = 0.9,
+		WorldStaticModel = HerbChives_Ground,
+	}
+	
+	item Cilantro
+	{
+		DisplayName = Cilantro,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbCilantro,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 6.5,
+		Carbohydrates = 1,
+		Lipids = 0.2,
+		Proteins = 0.6,
+		WorldStaticModel = HerbCilantro_Ground,
+	}
+
+	item Oregano
+	{
+		DisplayName = Oregano,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbOregano,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 28.8,
+		Carbohydrates = 7.1,
+		Lipids = 0.4,
+		Proteins = 1.4,
+		WorldStaticModel = HerbOregano_Ground,
+	}
+
+	item Parsley
+	{
+		DisplayName = Parsley,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbParsley,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 10.3,
+		Carbohydrates = 1.8,
+		Lipids = 0.2,
+		Proteins = 0.9,
+		WorldStaticModel = HerbParsley_Ground,
+	}
+	
+	item Rosemary
+	{
+		DisplayName = Rosemary,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbRosemary,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 37.3,
+		Carbohydrates = 5.8,
+		Lipids = 1.7,
+		Proteins = 1,
+		WorldStaticModel = HerbRosemary_Ground,
+	}
+	
+	item Sage
+	{
+		DisplayName = Sage,
+		DisplayCategory = Food,
+		FoodType = Herb,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HerbSage,
+		EvolvedRecipe = Stir fry:1;Stir fry Griddle Pan:1;Pizza:1;Omelette:1;PastaPan:1;PastaPot:1;RicePan:1;RicePot:1;Sandwich:1;Salad:1;Sandwich Baguette:1;Soup:1;Stew:1;Bread:1;Burger:1;Roasted Vegetables:1;Pizza:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 89,
+		Carbohydrates = 17.4,
+		Lipids = 2.5,
+		Proteins = 3.1,
+		WorldStaticModel = HerbSage_Ground,
+	}
+	
+}
