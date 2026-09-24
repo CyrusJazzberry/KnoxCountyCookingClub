@@ -1,0 +1,59 @@
+module KnoxCooking
+{
+	/************** This file is for world static models only. **************/	
+
+	model ItalianSeasoning
+	{
+		mesh = WorldItems/ItalianSeasoning,
+		texture = WorldItems/ItalianSeasoning,
+		scale = 0.6,
+	}
+
+	model PineSyrup
+	{
+		mesh = WorldItems/PineSyrup,
+		texture = WorldItems/PineSyrup,
+		scale = 0.4,
+	}
+	
+	model PineNutButter
+	{
+		mesh = WorldItems/PineNutButter,
+		texture = WorldItems/PineNutButter,
+		scale = 0.4,
+	}
+	
+	model PestoJar
+	{
+		mesh = WorldItems/SmallJarGeneric,
+		texture = WorldItems/PestoJar,
+		scale = 0.45,
+	}
+	
+	model AcornFlourTray
+	{
+		mesh = WorldItems/AcornFlourTray,
+		texture = WorldItems/AcornFlourTray,
+		scale = 0.0045,
+	}
+	
+	model NutsPine
+	{
+		mesh = WorldItems/NutsPine,
+		texture = WorldItems/NutsPine,
+		scale = 0.01,
+	}
+	
+    model JamFruit_Ground
+    {
+        mesh = WorldItems/JarLid,
+        texture = WorldItems/JamFruitJar,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0048 0.025 0.0066,
+            rotate = -0.9734 -3.4842 -0.7977,
+            scale = 0.6862,
+        }
+    }
+}

@@ -1,0 +1,231 @@
+module KnoxCooking
+{
+imports {
+    Base,
+	farming
+}
+	/****************************** PINE PRODUCTS ******************************/
+
+	craftRecipe HarvestPineNuts
+	{
+        timedAction = Making,
+        time = 80,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        xpAward = Cooking:2,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:3;Foraging:2,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 4 [Base.Pinecone] flags[InheritFood;ItemCount],
+        }
+        outputs
+        {
+            item 1 KnoxCooking.PineNuts,
+        }
+	}
+
+	craftRecipe MakePineNutButter
+	{
+        timedAction = MixingBowl,
+        time = 120,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingCombineAllNutrition,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:5,
+        SkillRequired = Cooking:4,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.OilVegetable],
+            item 8 [KnoxCooking.PineNuts] flags[InheritFoodAge;IsCookedFoodItem;ItemCount],
+        }
+        outputs
+        {
+            item 1 KnoxCooking.PineNutButter,
+        }
+	}
+	
+	/****************************** CONDIMENTS/SPREADS ******************************/
+	
+	craftRecipe MakePeanutButter
+	{
+        timedAction = MixingBowl,
+        time = 120,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingCombineAllNutrition,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:5,
+        SkillRequired = Cooking:4,
+        inputs
+        {
+            item 1 tags[base:mortarpestle] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.OilVegetable],
+            item 8 [Base.Peanuts] flags[InheritFoodAge;IsCookedFoodItem;ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.PeanutButter,
+        }
+	}
+	
+	/****************************** FRUIT PRODUCTS ******************************/
+	
+    craftRecipe PrepareFruitPreservesFruits
+    {
+        timedAction = MixingBowl,
+        time = 100,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingMakePreserves,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:3,
+        SkillRequired = Cooking:2,
+        inputs
+        {
+			item 4 [Base.Apple;Base.Mango;Base.Peach;Base.Pear;Base.Grapes;Base.Cherry;KnoxCooking.Persimmon] flags[InheritFoodAge;ItemCount],
+            item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[base:sharpknife] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:sugar],
+            item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
+            -fluid 0.6 [Water],
+        }
+        outputs
+        {
+            item 1 mapper:saucepanType,
+        }
+        itemMapper saucepanType
+        {
+            KnoxCooking.SaucepanFruitPreserves = Base.Saucepan,
+            KnoxCooking.SaucepanFruitPreserves2 = Base.SaucepanCopper,
+        }
+    }
+	
+    craftRecipe PrepareFruitPreservesBerries
+    {
+        timedAction = MixingBowl,
+        time = 100,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingMakePreserves,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:3,
+        SkillRequired = Cooking:2,
+        inputs
+        {
+			item 8 [Base.BerryBlue;Base.BerryGeneric1;Base.BerryGeneric2;Base.BerryGeneric3;Base.BerryGeneric4;Base.BerryGeneric5;Base.BerryPoisonIvy;Base.BerryBlack;Base.BeautyBerry;Base.HollyBerry;Base.WinterBerry;Base.Strewberrie] flags[InheritFoodAge;ItemCount],
+            item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:sugar],
+            item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
+            -fluid 0.6 [Water],
+        }
+        outputs
+        {
+            item 1 mapper:saucepanType,
+        }
+        itemMapper saucepanType
+        {
+            KnoxCooking.SaucepanFruitPreserves = Base.Saucepan,
+            KnoxCooking.SaucepanFruitPreserves2 = Base.SaucepanCopper,
+        }
+    }
+	
+    craftRecipe PrepareCitrusPreserves
+    {
+        timedAction = MixingBowl,
+        time = 120,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingMakePreserves,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:3,
+        SkillRequired = Cooking:2,
+        inputs
+        {
+			item 4 [Base.Grapefruit;Base.Lemon;Base.Lime;Base.Orange] flags[InheritFoodAge;ItemCount],
+            item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:sugar],
+            item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritFood;InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
+            -fluid 0.6 [Water],
+        }
+        outputs
+        {
+            item 1 mapper:saucepanType,
+        }
+        itemMapper saucepanType
+        {
+            KnoxCooking.SaucepanCitrusPreserves = Base.Saucepan,
+            KnoxCooking.SaucepanCitrusPreserves2 = Base.SaucepanCopper,
+        }
+    }
+	
+    craftRecipe CanFruitPreserves
+    {
+        timedAction = MixingBowl,
+        time = 60,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		xpAward = Cooking:2,
+        inputs
+        {
+			item 1 [KnoxCooking.JamFruitJar] flags[IsEmpty;ItemCount] mode:destroy,
+            item 1 [KnoxCooking.SaucepanFruitPreserves;KnoxCooking.SaucepanFruitPreserves2;KnoxCooking.SaucepanCitrusPreserves;KnoxCooking.SaucepanCitrusPreserves2] flags[InheritCondition;IsCookedFoodItem;InheritFood;InheritCooked;InheritFoodAge;ItemCount] mappers[saucepanType;fruitJam] mode:destroy,
+        }
+        outputs
+        {
+            item 1 mapper:fruitJam,
+            item 1 mapper:saucepanType,
+
+        }
+        itemMapper saucepanType
+        {
+            Base.Saucepan = KnoxCooking.SaucepanFruitPreserves,
+            Base.SaucepanCopper =KnoxCooking.SaucepanFruitPreserves2,
+            Base.Saucepan = KnoxCooking.SaucepanCitrusPreserves,
+            Base.SaucepanCopper = KnoxCooking.SaucepanCitrusPreserves2,
+        }
+        itemMapper fruitJam
+        {
+            Base.JamFruit = KnoxCooking.SaucepanFruitPreserves,
+            Base.JamFruit = KnoxCooking.SaucepanFruitPreserves2,
+            Base.JamMarmalade = KnoxCooking.SaucepanCitrusPreserves,
+            Base.JamMarmalade = KnoxCooking.SaucepanCitrusPreserves2,
+        }
+    }
+	
+	/****************************** FORAGE PRODUCTS ******************************/ 
+
+    craftRecipe HoneyFromComb
+    {
+        timedAction = SliceFood_Surface,
+        time = 100,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+		onCreate = KnoxCookingCombineAllNutrition,
+        xpAward = Cooking:5,
+        NeedToBeLearn = true,
+        AutoLearnAny = Cooking:3;Foraging:2,
+        inputs
+        {
+			item 2 [KnoxCooking.Honeycomb] flags[ItemCount] mode:destroy,
+			item 1 tags[base:sharpknife] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.RippedSheets] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Honey,
+            item 1 Base.RippedSheetsDirty,
+        }
+    }
+
+}

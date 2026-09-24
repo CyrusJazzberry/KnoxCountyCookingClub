@@ -1,0 +1,62 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** CONTAINERS ******************************/
+
+	item JamFruitJar
+    {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = JamFruitJar,
+        IconFluidMask = JamFruitJar_Mask,
+        StaticModel = JamFruit_Ground,
+        WorldStaticModel = JamFruit_Ground,
+        FillFromDispenserSound = GetWaterFromDispenserGlass,
+        FillFromLakeSound = GetWaterFromLakeBottle,
+        FillFromTapSound = GetWaterFromTapGlass,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:glass,
+        component FluidContainer
+        {
+            ContainerName = Jam Jar,
+            RainFactor = 0.5,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+	
+	/****************************** RECIPE MAGAZINES ******************************/
+	
+	item HomemadeJamRecipeMag
+    {
+        DisplayCategory = RecipeResource,
+        ItemType = base:literature,
+        Weight = 0.5,
+        Icon = MagazineHomemadeJam,
+        BoredomChange = -20,
+        StressChange = -15,
+        LearnedRecipes = PrepareFruitPreservesFruits;PrepareFruitPreservesBerries;PrepareCitrusPreserves;MakePeanutButter,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineCook1Ground,
+        Tags = base:magazine,
+        OnCreate = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+	
+	item ForageCookingRecipeMag
+    {
+        DisplayCategory = RecipeResource,
+        Weight = 0.5,
+        ItemType = base:literature,
+        Icon = Magazine_Outdoors2,
+        BoredomChange = -20,
+        StressChange = -15,
+        LearnedRecipes = HarvestPineNuts;MakePineNutButter;HoneyFromComb,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag7,
+        Tags = base:magazine,
+        OnCreate = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+}

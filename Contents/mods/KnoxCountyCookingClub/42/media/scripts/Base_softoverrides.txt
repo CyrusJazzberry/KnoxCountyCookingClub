@@ -1,0 +1,21 @@
+module Base
+{
+	/****************************** FOODS ******************************/
+	
+	item JamFruit
+	{
+		ReplaceOnUse = KnoxCooking.JamFruitJar,
+	}
+	
+	item JamMarmalade
+	{
+		ReplaceOnUse = KnoxCooking.JamFruitJar,
+	}
+
+	/****************************** RECIPE MAGAZINES ******************************/
+	
+	item GlassmakingMag3
+	{
+		LearnedRecipes = MakeGlassBottle;MakeGlassJar;MakeJamJar,
+	}
+}

@@ -1,0 +1,282 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** PINE PRODUCTS ******************************/
+
+    item PineNuts
+    {
+        DisplayCategory = Food,
+        EatType = EatSmall,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = PineNuts,
+        EvolvedRecipe = Soup:8;Stir fry:8;Salad:4;Rice:8;ConeIcecream:4,
+        FoodType = Nut,
+        HungerChange = -8.0,
+			DaysFresh = 10,
+			DaysTotallyRotten = 90,
+		IsCookable = true,
+        BadInMicrowave = true,
+		MinutesToCook = 8,
+		MinutesToBurn = 20,
+        Calories = 191.0,
+        Carbohydrates = 3.7,
+        Lipids = 19.0,
+        Proteins = 3.9,
+        WorldStaticModel = NutsPine,
+        EvolvedRecipeName = Pine Nut,
+        AnimalFeedType = Nuts,
+    }
+	
+    item PineNutButter
+    {
+        DisplayCategory = Food,
+        EatType = Candrink,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = PineNutButter,
+        EvolvedRecipe = Soup:5;Stir fry:5;Sandwich:5;Toast:5;ConeIcecream:5,
+        FoodType = NoExplicit,
+        HungerChange = -24.0,
+        UnhappyChange = -15,
+        Calories = 2019.0,
+        Carbohydrates = 39.3,
+        Lipids = 205.2,
+        Proteins = 41.1,
+        StaticModel = PineNutButter,
+        WorldStaticModel = PineNutButter,
+    }
+	
+    item PineSyrup
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = PineSyrup,
+        CantBeFrozen = true,
+        EatType = GlugFood,
+        EvolvedRecipe = Pancakes:3;Waffles:3;ConeIcecream:3;Oatmeal:3,
+        Spice = true,
+        HungerChange = -45.0,
+        UnhappyChange = -20,
+        Calories = 1100.0,
+        Carbohydrates = 270.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomContextMenu = Drink,
+        CustomEatSound = DrinkingFromCan,
+        StaticModel = PineSyrup,
+        WorldStaticModel = PineSyrup,
+        FoodType = NoExplicit,
+    }
+	
+	/****************************** FRUIT PROCESSING ******************************/
+
+    item SaucepanFruitPreserves
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = SaucepanFilled,
+        PourType = saucepan,
+		EatType = Plate,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+        FoodType = NoExplicit,
+        IsCookable = true,
+        MinutesToCook = 60,
+        MinutesToBurn = 90,
+        HungerChange = -30.0,
+        UnhappyChange = -10,
+        Calories = 550.0,
+        Carbohydrates = 130.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        ConditionMax = 5,
+        ReplaceOnUse = Base.Saucepan,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        StaticModel = WaterSaucepanRice,
+        WorldStaticModel = WaterSaucepanRice,
+        Tags = base:hasmetal,
+    }
+	
+    item SaucepanFruitPreserves2
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = CopperPot_Pasta,
+        PourType = saucepan,
+		EatType = Plate,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+        FoodType = NoExplicit,
+        IsCookable = true,
+        MinutesToCook = 60,
+        MinutesToBurn = 90,
+        HungerChange = -30.0,
+        UnhappyChange = -10,
+        Calories = 550.0,
+        Carbohydrates = 130.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        ConditionMax = 5,
+        ReplaceOnUse = Base.Saucepan,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        StaticModel = SaucepanCopperRice,
+        WorldStaticModel = SaucepanCopperRice,
+        Tags = base:hasmetal,
+    }
+	
+    item SaucepanCitrusPreserves
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = SaucepanFilled,
+        PourType = saucepan,
+		EatType = Plate,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+        FoodType = NoExplicit,
+        IsCookable = true,
+        MinutesToCook = 60,
+        MinutesToBurn = 90,
+        HungerChange = -30.0,
+        UnhappyChange = -10,
+        Calories = 550.0,
+        Carbohydrates = 130.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        ConditionMax = 5,
+        ReplaceOnUse = Base.Saucepan,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        StaticModel = WaterSaucepanRice,
+        WorldStaticModel = WaterSaucepanRice,
+        Tags = base:hasmetal,
+    }
+	
+    item SaucepanCitrusPreserves2
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 3.0,
+        Icon = CopperPot_Pasta,
+        PourType = saucepan,
+		EatType = Plate,
+        BadInMicrowave = true,
+        CookingSound = BoilingFood,
+        FoodType = NoExplicit,
+        IsCookable = true,
+        MinutesToCook = 60,
+        MinutesToBurn = 90,
+        HungerChange = -30.0,
+        UnhappyChange = -10,
+        Calories = 550.0,
+        Carbohydrates = 130.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        ConditionMax = 5,
+        ReplaceOnUse = Base.Saucepan,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        StaticModel = SaucepanCopperRice,
+        WorldStaticModel = SaucepanCopperRice,
+        Tags = base:hasmetal,
+    }
+
+	/****************************** FRUIT ******************************/
+	
+    item Persimmon
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = Persimmon,
+        EvolvedRecipe = Cake:12;FruitSalad:6;Pancakes:6;Muffin:6;PieSweet:12;Salad:6,
+        FoodType = Fruits,
+        DaysFresh = 3,
+			DaysTotallyRotten = 9,
+			HungerChange = -16.0,
+        ThirstChange = -8.0,
+        Calories = 32.0,
+        Carbohydrates = 8.0,
+        Lipids = 0.1,
+        Proteins = 0.2,
+        CustomEatSound = EatingFruit,
+        StaticModel = Orange_Ground,
+        WorldStaticModel = Orange_Ground,
+    }
+	
+	/****************************** VEGGIES ******************************/
+	
+	
+	/****************************** ACORN FLOUR ******************************/
+	
+
+	/****************************** FOOD ADDITIVES ******************************/
+	
+    item Pesto
+    {
+        DisplayCategory = Food,
+        EatType = Candrink,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = PestoJar,
+        EvolvedRecipe = Soup:6;Bread:2;Roasted Vegetables:6;Sandwich:2;Sandwich Baguette:2;PastaPot:6;PastaPan:6;RicePot:6;RicePan:6;Salad:6;Stir fry:6;Stir fry Griddle Pan:6,
+        FoodType = NoExplicit,
+        Packaged = true,
+        HungerChange = -12.0,
+        UnhappyChange = -10,
+        Calories = 1292.0,
+        Carbohydrates = 18.8,
+        Lipids = 128.0,
+        Proteins = 27.6,
+        StaticModel = PestoJar,
+        WorldStaticModel = PestoJar,
+    }
+	
+    item ItalianSeasoning
+    {
+        DisplayCategory = Food,
+        EatType = GlugFood,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = ItalianSeasoning,
+        CantBeFrozen = true,
+        EvolvedRecipe = Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Rice:1;Pasta:1;Sandwich:1;Taco:1;Burrito:1,
+        Spice = true,
+        HungerChange = -10.0,
+        ThirstChange = 20.0,
+        UnhappyChange = 10,
+        StaticModel = ItalianSeasoning,
+        WorldStaticModel = ItalianSeasoning,
+        FoodType = NoExplicit,
+        Tags = base:minoringredient;base:driedfood,
+    }
+	
+	/****************************** SWEETS ******************************/
+	
+    item Honeycomb
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = Honeycomb,
+        FoodType = NoExplicit,
+        UnhappyChange = -10,
+		HungerChange = -8.0,
+        Calories = 297.0,
+        Carbohydrates = 84.15,
+        Lipids = 0.0,
+        Proteins = 0.0,
+    }
+
+	/****************************** DRINKS ******************************/
+
+}

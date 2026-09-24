@@ -1,0 +1,30 @@
+module KnoxCooking
+{
+imports {
+    Base,
+	farming
+}
+	/****************************** GLASSMAKING ******************************/
+
+    craftRecipe MakeJamJar
+    {
+        timedAction = Craft_Glassmaking,
+        time = 100,
+        Tags = AnySurfaceCraft;Glassmaking,
+        category = Glassmaking,
+        NeedToBeLearn = true,
+        SkillRequired = Glassmaking:5,
+        AutoLearnAny = Glassmaking:6,
+        xpAward = Glassmaking:75,
+        inputs
+        {
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeLight],
+            item 1 [Base.GlassBlowingPipe] mode:keep,
+            item 1 [Base.CeramicCrucibleWithGlass],
+        }
+        outputs
+        {
+            item 1 KnoxCooking.JamFruitJar,
+        }
+    }
+}

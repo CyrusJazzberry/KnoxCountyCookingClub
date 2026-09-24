@@ -1,0 +1,20 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** FOOD FALLBACK ******************************/
+	
+	recipe Take Lid Off Jar
+	{
+		JarWithLid=1,
+		
+		Result		: JarLid=1,
+        OnCreate:GetJar,
+		Time		: 30.0,
+		Category	: Cooking,
+		OnCreate:Recipe.OnCreate.GetEmptyJar,
+        AnimNode:Disassemble,
+	}
+
+}

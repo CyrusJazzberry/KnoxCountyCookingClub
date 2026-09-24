@@ -1,7 +1,7 @@
 name=Knox County Cooking Club
 id=KnoxCountyCookingClub
 description=Cook more things using the power of nature and ingenuity!
-poster=preview.png
+poster=poster.png
 modVersion=1.4.0
 icon=logo_mini.png
 tags=Build 41;Food;Multiplayer

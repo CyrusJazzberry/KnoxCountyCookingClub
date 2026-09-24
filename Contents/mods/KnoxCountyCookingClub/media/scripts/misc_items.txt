@@ -1,0 +1,22 @@
+module KnoxCooking
+{
+imports {
+    Base
+}
+	/****************************** FOOD FALLBACK ******************************/
+    item JarWithLid
+	{
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		DisplayName = Closed Jar,
+		Icon = JarWithLid,
+		Weight = 0.2,
+		Tooltip = Tooltip_item_JarWithLid,
+		SurvivalGear = TRUE,
+		WorldStaticModel = EmptyJar,
+	}
+	
+	/****************************** FORAGE ******************************/
+	
+
+}

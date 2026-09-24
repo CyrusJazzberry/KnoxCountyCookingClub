@@ -5,36 +5,17 @@ ItemName_EN = {
 	ItemName_KnoxCooking.PineSyrupFerment = "Pine Syrup (Macerating)",
 	ItemName_KnoxCooking.PineSyrupReady = "Pine Syrup (Ready)",
 	ItemName_KnoxCooking.PineSyrup = "Pine Syrup",
-	
-	ItemName_KnoxCooking.PineWineMustUncooked = "Pine Wine Must",
-	ItemName_KnoxCooking.PineWineMustPrep= "Pine Wine Must (Prepared)",
-	ItemName_KnoxCooking.PineWineMustFerment = "Pine Wine Must (Fermenting)",
-	ItemName_KnoxCooking.PineWineMustReady = "Pine Wine (Ready)",
-	ItemName_KnoxCooking.PineWine = "Pine Wine",
-	
-	ItemName_KnoxCooking.Lemonade = "Lemonade",
-	
-	ItemName_KnoxCooking.AppleCiderPrepUncooked = "Pot of Apple Cider",
-	ItemName_KnoxCooking.AppleCiderPrepCooked = "Pot of Apple Cider (Cooked)",
-	ItemName_KnoxCooking.AppleCiderPrepSpoiled = "Pot of Apple Cider (Spoiled)",
-	ItemName_KnoxCooking.AppleCider = "Apple Cider",
-	
-	ItemName_KnoxCooking.JamPrepPotUncooked = "Pot of Jam",
+	ItemName_KnoxCooking.JamPrepPotUncooked = "Pot of Jam Prep",
 	ItemName_KnoxCooking.JamPrepPotCooked = "Pot of Jam (Cooked)",
-	ItemName_KnoxCooking.JamPrepPotSpoiled = "Pot of Jam (Spoiled)",	
-	ItemName_KnoxCooking.MarmaladePrepPotUncooked = "Pot of Marmalade",
-	ItemName_KnoxCooking.MarmaladePrepPotCooked = "Pot of Marmalade (Cooked)",
-	ItemName_KnoxCooking.MarmaladePrepPotSpoiled = "Pot of Marmalade (Spoiled)",
-	
+	ItemName_KnoxCooking.MarmaladePrepPotUncooked = "Pot of Marmalade Prep",
+	ItemName_KnoxCooking.MarmaladePrepPotCooked = "Pot of Marmalade Prep (Cooked)",
 	ItemName_KnoxCooking.Persimmon = "Persimmon",
-	
-	ItemName_KnoxCooking.Rhubarb = "Rhubarb",
-	
 	ItemName_KnoxCooking.AcornFlourLeaching = "Acorn Flour (Leaching)",
 	ItemName_KnoxCooking.AcornFlourLeached = "Acorn Flour (Leached)",
 	ItemName_KnoxCooking.AcornFlourDrying = "Acorn Flour (Drying)",
 	ItemName_KnoxCooking.AcornFlourReady = "Acorn Flour (Dried)",
-	
 	ItemName_KnoxCooking.Pesto = "Pesto",
 	ItemName_KnoxCooking.ItalianSeasoning = "Italian Seasoning",
+	ItemName_KnoxCooking.RoadRefuse1 = "Road Squirrel",
+	ItemName_KnoxCooking.RoadRefuse2 = "Road Rabbit",
 }
