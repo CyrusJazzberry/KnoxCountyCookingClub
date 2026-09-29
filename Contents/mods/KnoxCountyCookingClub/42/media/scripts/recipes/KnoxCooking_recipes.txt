@@ -85,16 +85,16 @@ imports {
         Tags = AnySurfaceCraft;Cooking,
         category = Cooking,
 		onCreate = KnoxCookingMakePreserves,
-        xpAward = Cooking:5,
+        xpAward = Cooking:3,
         NeedToBeLearn = true,
-        AutoLearnAny = Cooking:3,
-        SkillRequired = Cooking:2,
+        AutoLearnAny = Cooking:4,
+        SkillRequired = Cooking:3,
         inputs
         {
 			item 4 [Base.Apple;Base.Mango;Base.Peach;Base.Pear;Base.Grapes;Base.Cherry;KnoxCooking.Persimmon] flags[InheritFoodAge;ItemCount],
             item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
 			item 1 tags[base:sharpknife] mode:keep flags[MayDegradeVeryLight],
-            item 1 tags[base:sugar],
+            item 2 tags[base:sugar],
             item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
             -fluid 0.6 [Water],
         }
@@ -116,15 +116,15 @@ imports {
         Tags = AnySurfaceCraft;Cooking,
         category = Cooking,
 		onCreate = KnoxCookingMakePreserves,
-        xpAward = Cooking:5,
+        xpAward = Cooking:3,
         NeedToBeLearn = true,
-        AutoLearnAny = Cooking:3,
-        SkillRequired = Cooking:2,
+        AutoLearnAny = Cooking:4,
+        SkillRequired = Cooking:3,
         inputs
         {
 			item 8 [Base.BerryBlue;Base.BerryGeneric1;Base.BerryGeneric2;Base.BerryGeneric3;Base.BerryGeneric4;Base.BerryGeneric5;Base.BerryPoisonIvy;Base.BerryBlack;Base.BeautyBerry;Base.HollyBerry;Base.WinterBerry;Base.Strewberrie] flags[InheritFoodAge;ItemCount],
             item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
-            item 1 tags[base:sugar],
+            item 2 tags[base:sugar],
             item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
             -fluid 0.6 [Water],
         }
@@ -146,15 +146,15 @@ imports {
         Tags = AnySurfaceCraft;Cooking,
         category = Cooking,
 		onCreate = KnoxCookingMakePreserves,
-        xpAward = Cooking:5,
+        xpAward = Cooking:3,
         NeedToBeLearn = true,
-        AutoLearnAny = Cooking:3,
-        SkillRequired = Cooking:2,
+        AutoLearnAny = Cooking:4,
+        SkillRequired = Cooking:3,
         inputs
         {
 			item 4 [Base.Grapefruit;Base.Lemon;Base.Lime;Base.Orange] flags[InheritFoodAge;ItemCount],
             item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
-            item 1 tags[base:sugar],
+            item 2 tags[base:sugar],
             item 1 [Base.Saucepan;Base.SaucepanCopper] flags[InheritFood;InheritCondition;ItemCount] mappers[saucepanType] mode:destroy,
             -fluid 0.6 [Water],
         }
@@ -212,7 +212,7 @@ imports {
         Tags = AnySurfaceCraft;Cooking,
         category = Cooking,
 		onCreate = KnoxCookingCombineAllNutrition,
-        xpAward = Cooking:5,
+        xpAward = Cooking:2,
         NeedToBeLearn = true,
         AutoLearnAny = Cooking:3;Foraging:2,
         inputs
