@@ -1,4 +1,5 @@
--- give preserves -10 unhappiness when cooked
-function fruitPreservesCooked(food)
-    food:setUnhappyChange(-10);
+-- invert preserves unhappiness when cooked
+function KnoxCookingFruitPreservesCooked(food)
+	local unhappiness = food:getUnhappyChange();
+    food:setUnhappyChange(-unhappiness);
 end
